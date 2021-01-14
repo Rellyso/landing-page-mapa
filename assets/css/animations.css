@@ -1,0 +1,21 @@
+[data-anim] {
+    opacity: 0;
+    transition: all .5s;
+}
+
+[data-anim="esquerda"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anim="direita"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anim="card"] {
+    transform: scale(0.8);
+}
+
+[data-anim].animation {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
