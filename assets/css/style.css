@@ -548,7 +548,7 @@ html, body{
         padding-top: 1rem;
         
     }
-    .embedVideoContainer iframe {
+    .embedVideoContainer video {
         width: 100%;
         height: 500px;
     }
@@ -565,7 +565,7 @@ html, body{
         padding-top: 1rem;
         
     }
-    .embedVideoContainer iframe {
+    .embedVideoContainer video {
         width: 100%;
         height: 400px;
     }
@@ -575,7 +575,7 @@ html, body{
         padding-top: 1rem;
         
     }
-    .embedVideoContainer iframe {
+    .embedVideoContainer video {
         width: 100%;
         height: 270px;
     }
