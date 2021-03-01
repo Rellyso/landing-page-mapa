@@ -27,8 +27,13 @@ html, body{
     margin-top: -9px !important;
 }
 
-video {
+.video {
+    overflow: hidden;
+}
+
+.video video {
     object-fit: cover;
+    object-position: center center;
 }
 
 .bg-gradient{
