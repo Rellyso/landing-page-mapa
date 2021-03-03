@@ -854,3 +854,9 @@ html, body{
 #moodle {
     min-height: calc(100vh - 90px);
 }
+
+#icons {
+    color: #224359;
+
+    font-weight: 500;
+}
