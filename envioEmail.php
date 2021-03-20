@@ -83,7 +83,7 @@
                 <p style="font-size: 20px;" class="m-0 p-0 text-white">Mensagem enviada com sucesso!</p>
                 <p style="font-size: 14px;" class="m-0 p-0 text-white">Resposta em até 24 horas</p>
                 <span class="mt-3">
-                    <a class="btn btn-warning nav-link txt-btn-increvase p-0 pl-2 pr-2" href="#"> VOLTAR</a>
+                    <a class="btn btn-warning nav-link txt-btn-increvase p-0 pl-2 pr-2" href="#" onclick="history.back()"> VOLTAR</a>
                 </span>
             </div>
         
