@@ -17,14 +17,14 @@
         $Mailer->Host       = 'mail.terraurbanizada.com';                    
         $Mailer->SMTPAuth   = true;                                   
         $Mailer->Username   = 'contato@terraurbanizada.com';                     
-        $Mailer->Password   = 'szc4Tiq2Jp5G';                              
+        $Mailer->Password   = 's31uegd1l7hc';                              
         $Mailer->Port       = 587; 
         $Mailer->CharSet = 'UTF-8';                             
     
         //Recipients
         $Mailer->setFrom($email, $nome);
-        $Mailer->addAddress('talesweb2@gmail.com', 'Terra Urbanizada - MAPA');  
-        $Mailer->addCC('talesweb@yahoo.com.br');
+        $Mailer->addAddress('rellysondouglas2015@gmail.com', 'Terra Urbanizada - MAPA');  
+        $Mailer->addCC('rellysondouglas2015@gmail.com');
     
         // Content
         $Mailer->isHTML(true);                            
