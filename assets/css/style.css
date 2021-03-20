@@ -2,6 +2,16 @@ html, body{
     overflow-x: hidden;
 }
 
+html,
+body,
+button,
+input,
+select,
+a {
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .home{
     position: relative;
 
@@ -72,6 +82,93 @@ html, body{
     
     max-height: 180px;
     height: 100%;
+}
+
+#btn-increvase {
+    font-size: 2.25rem;
+
+    width: fit-content;
+    
+    display: block;
+    padding: 8px 24px;
+    font-weight: 700;
+    box-shadow: 4px 4px 47px -24px rgb(254 254 254 / 20%);
+    margin-top: 24px !important;
+    background-color: #f5bf14;
+    border-radius: 2.25rem;
+
+    position: relative;
+
+    z-index: 2;
+
+    transition: filter .4s;
+}
+
+#btn-increvase:hover {
+    filter: brightness(1.1);
+}
+
+#btn-increvase::after {
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    
+    width: 70%;
+    height: 70%;
+
+    border: 20px solid #f5bf14;
+    border-radius: 2.25rem;
+
+    opacity: 1;
+
+    transform: translate(-50%, -50%);
+
+    transition: all .9s ease-out;
+
+    z-index: -2;
+
+}
+
+#btn-increvase:hover::after {
+    border-width: 1px;
+
+    width: 120%;
+    height: 120%;
+
+    opacity: 0;
+}
+
+#btn-increvase::before {
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    
+    width: 90%;
+    height: 90%;
+
+    border: 10px solid #f5bf14;
+    border-radius: 2.25rem;
+
+    opacity: 1;
+
+    transform: translate(-50%, -50%);
+
+    transition: all 1.2s ease-out;
+
+    z-index: -2;
+}
+
+#btn-increvase:hover::before {
+    border-width: 0px;
+
+    width: 130%;
+    height: 130%;
+
+    opacity: 0;
 }
 
 .navbarLogoForm{
@@ -238,20 +335,20 @@ html, body{
     border-radius: 1rem;
     width: 7rem;
 }
-
+/* 
 .containerHomeWidth{
     width: 35rem;
-}
+} */
 
 .containerPaddingTop {
     padding-top: 128px;
 }
-
+/* 
 @media(max-width: 450px){
     .containerHomeWidth{
         width: 22rem;
     }
-}
+} */
 
 .containerHomeWidth h1{
     font-size: 5rem;
@@ -340,10 +437,12 @@ html, body{
     padding: 4px 8px 4px 4px;
     border-radius: 0.3rem;
     cursor: pointer;
+
+    transition: all .2s ;
 }
 
 .module-box:hover{
-    background-color: #ffdb58;
+    background-color: #ffcc14;
 }
 
 .module-box p{
@@ -528,6 +627,12 @@ html, body{
 }
 .slide-image{
     height: 460px;
+}
+
+.moodlePlatform .plataform-text p {
+    font-family: 'Roboto';
+    
+    font-size: 18px;
 }
 
 /* embed video container */
@@ -813,37 +918,42 @@ html, body{
 
 /*Slide teste*/
 
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+} */
+
 @media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
+    section#professores .carousel-inner .carousel-item > div {
         display: none;
     }
-    .carousel-inner .carousel-item > div:first-child {
+    section#professores .carousel-inner .carousel-item > div:first-child {
         display: block;
     }
 }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
+#professores .carousel-inner .carousel-item.active,
+#professores .carousel-inner .carousel-item-next,
+#professores .carousel-inner .carousel-item-prev {
     display: flex;
 }
 
 /* display 3 */
 @media (min-width: 998px) {
     
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
+    section#professores .carousel-inner .carousel-item-right.active,
+    section#professores .carousel-inner .carousel-item-next {
       transform: translateX(25%);
     }
     
-    .carousel-inner .carousel-item-left.active, 
-    .carousel-inner .carousel-item-prev {
+    section#professores .carousel-inner .carousel-item-left.active, 
+    section#professores .carousel-inner .carousel-item-prev {
       transform: translateX(-25%);
     }
 }
 
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left{ 
+section#professores .carousel-inner .carousel-item-right,
+section#professores .carousel-inner .carousel-item-left{ 
   transform: translateX(0);
 }
 
@@ -859,4 +969,23 @@ html, body{
     color: #224359;
 
     font-weight: 500;
+}
+
+@media(max-width: 992px){
+    .container {
+        max-width: 100%;
+    }
+
+    #btn-increvase {
+        font-size: 2rem
+    }
+}
+@media(max-width: 768px){
+    #btn-increvase {
+        font-size: 1.5rem
+    }
+
+    .containerPaddingTop {
+        padding-top: 64px;
+    }
 }
