@@ -13,7 +13,7 @@
     try {
         //Server settings
         $Mailer->isSMTP();        
-        $Mailer->SMTPSecure = 'tls';                                   
+        $Mailer->SMTPSecure = 'tls';                         
         $Mailer->Host       = 'mail.terraurbanizada.com';                    
         $Mailer->SMTPAuth   = true;                                   
         $Mailer->Username   = 'contato@terraurbanizada.com';                     
@@ -23,12 +23,16 @@
     
         //Recipients
         $Mailer->setFrom($email, $nome);
-        $Mailer->addAddress('rellysondouglas2015@gmail.com', 'Terra Urbanizada - MAPA');  
-        $Mailer->addCC('rellysondouglas2015@gmail.com');
+        $Mailer->addAddress('atendimentoead@terraurbanizada.com', 'Terra Urbanizada - MAPA');  
+        $Mailer->addCC(
+            'suporteead@terraurbanizada.com', 
+            'comunicacaoead@terraurbanizada.com', 
+            'contatoead@terraurbamizada.com', 
+        );
     
         // Content
         $Mailer->isHTML(true);                            
-        $Mailer->Subject = $assunto;
+        $Mailer->Subject = "[FALE CONOSCO] $assunto";
         $Mailer->Body    = $mensagem;
         $Mailer->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
