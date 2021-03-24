@@ -296,8 +296,17 @@ a {
     border-radius: 1rem;
     text-align: center; 
 }
+.btn-lattes.disabled {
+    background-color: #999;
+}
+
 .btn-lattes div {
     font-size: 12px;
+    font-weight: 700;
+    margin-left: 4px !important;
+
+    letter-spacing: .2px;
+
 }
 
 .logo-lattes{
@@ -331,7 +340,7 @@ a {
     color: #ffffff;
     border-radius: .3rem;
     padding: .4rem;
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05);
 }
 
 .btn{
@@ -509,14 +518,14 @@ a {
 
 .professores-box{
     position: relative;
-    background-color: #CCC;
+    background-color: #f2f2f2;
     border: solid 1px #d5d5d5;
     width: 100%;
     height: 26rem;
     border-radius: 0.3rem;
     padding: .8rem;
-
     cursor: default;
+    box-shadow: 0px 0px 16px -1px rgb(0 0 0 / 5%);
 }
 
 .professores-box h1{
@@ -536,11 +545,15 @@ a {
 
 .sobreProf{
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: .7rem;
     line-height: 1.3rem;
     font-size: .8rem;
+
     text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .profAvatar {
@@ -637,7 +650,7 @@ a {
 .moodlePlatform .plataform-text p {
     font-family: 'Roboto';
     
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 /* embed video container */
@@ -820,13 +833,17 @@ a {
 
 .duvida-div-collapse{
     width: 100%;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .duvida-div-collapse p{
-    font-size: 14px;
+    font-size: 1rem;
     color: white;
+
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .duvida-padding-text{
