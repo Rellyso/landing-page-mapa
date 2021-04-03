@@ -31,6 +31,148 @@ a {
     font-weight: 500;
 }
 
+.moodleAccess p {
+    position: fixed;
+
+    padding: 4px 8px;
+
+    border-radius: 4px;
+
+    right: 80px;
+    bottom: 20px;
+
+    max-width: 80vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e1aa11;
+    color: #333;
+
+    transform: translate(0, 25%);
+
+    overflow: hidden;
+
+    animation: rightLeft 10s forwards;
+
+    z-index: 10;
+    cursor: default;
+}
+
+@keyframes rightLeft {
+    0% {
+        right: -200px;
+        opacity: 0;
+    }
+    10% {
+        right: 100px;
+        opacity: 1;
+    }
+    20% {
+        right: 80px;
+    }
+    30% {
+        right: 100px;
+    }
+    40% {
+        right: 80px;
+    }
+    55% {
+        right: 100px;
+    }
+    70% {
+        right: 80px;
+    }
+    85% {
+        right: 100px;
+        opacity: 1;
+    }
+    90% {
+        /* opacity: 0; */
+    }
+    100% {
+        right: -800px;
+        opacity: 0;
+    }
+}
+
+.moodleAccess p span {
+    width: max-content;
+}
+
+.moodleAccess p i {
+    margin-left: 10px;
+}
+
+.moodleAccess a {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+    
+    width: 45px;
+    height: 45px;
+    
+    border-radius: 50%;
+    border: white solid 1px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e1aa11;
+
+    z-index: 10;
+
+}
+
+.moodleAccess a div {
+    position: relative;
+    color: #e1aa11;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moodleAccess a div::before {
+    content: '';
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+    transform: scale(1);
+
+    background-color: #e1aa11;
+    border-radius: 50%;
+    
+    opacity: .5;
+    z-index: -1;
+
+    transition: all .5s ease-in-out;
+    animation: fadeCircleWithDelay infinite 4s;
+}
+.moodleAccess a i {
+    color: white;
+}
+
+
+@keyframes fadeCircleWithDelay {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    } 50% {
+        transform: scale(1.5);
+        opacity: 0;
+    } 60% {
+        transform: scale(1);
+    }
+}
+
 .txt-btn-inscrevase{
     color:  #257334 !important;
     font-size: .9rem;
@@ -40,6 +182,12 @@ a {
 
     width: auto;
 }
+
+.buttonInscrevase .txt-btn-inscrevase {
+    width: max-content !important;
+    padding: 4px 0
+}
+    
 
 .video {
     overflow: hidden;
@@ -87,6 +235,7 @@ a {
     max-height: 180px;
     height: 100%;
 }
+
 
 #btn-inscrevase {
     font-size: 2.25rem;
@@ -607,7 +756,7 @@ a {
     background-image: url('../images/prof-patrick01.png');
 }
 .rosane{
-    background-image: url('../images/prof-rosane01.png');
+    background-image: url('../images/prof-rosane01.jpg');
 }
 .luiz{
     background-image: url('../images/prof-luiz01.png');
